@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MP1 Starter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--2.Sticky Navbar: A top navigation bar that sticks to the top of the window when scrolling -->
+<nav id = "menu" class="fixed-nav-bar">
+    <ul>
+        <li id="link1"><a href="#section1">Video</a></li>
+        <li id="link2"><a href="#section2">Classes</a></li>
+        <li id="link3"><a href="#section3">Gallary</a></li>
+        <ul style="float:right;list-style-type:none;">
+            <li id="link4"><a class="active" href="#section4">Media</a></li>
+            <li id = "modal-link"><a href="#modal">Contact</a></li>
+        </ul>
+    </ul>
+</nav>
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">x</span>
+        <p>Some text in the Modal..</p>
+    </div>
+</div>
+
+<div id="section1" class = "video">
+    <video width="100%" height="100%" controls  poster="uiuc1.jpg">
+        <source src="./media/video.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="section2">
+    <h1>My favorite classes</h1>
+    <div class = "multi-colum">
+        <p class = "cols">CS498RK<br><br>Interesting Web Porgramming!!!</br></p>
+        <p class = "cols">CS461<br><br><br>Security! Challenge yourself</br></p>
+        <p class = "cols">CS498VR<br><br><br>Cool virtual reality! </br></p>
+    </div>
+</div>
+
+<div id = "section3" class = "service">
+    <!--<div class = "arrow" id="larrow" ><img src ="./media/leftarrow.png"></div>-->
+    <i class="fa fa-arrow-left" id="larrow"></i>
+    <div class = "arrow"  id="carousel">
+        <ul id="list">
+            <li id='first'><img  src ="./media/slide1.jpeg"></li>
+            <li><img src ="./media/slide2.jpeg"></li>
+            <li id='last'><img src ="./media/slide3.jpeg"></li>
+        </ul>
+    </div>
+    <!--<div class = "arrow" id="rarrow" ><img src ="./media/rightarrow.png"></div>-->
+    <i class="fa fa-arrow-right" id="rarrow"></i>
+</div>
+
+<div id="section4">
+    <img class = "icon" src="./media/icons.jpg">
+</div>
+
+
+<script src="lib/jquery-2.1.3.min/index.js"></script>
+<script src="js/script.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
