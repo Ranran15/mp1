@@ -14,18 +14,17 @@
         <li id="link1"><a href="#section1">Video</a></li>
         <li id="link2"><a href="#section2">Classes</a></li>
         <li id="link3"><a href="#section3">Gallary</a></li>
+        <li id="link4"><a href="#section4">Media</a></li>
         <ul style="float:right;list-style-type:none;">
-            <li id="link4"><a class="active" href="#section4">Media</a></li>
             <li id = "modal-link"><a href="#modal">Contact</a></li>
         </ul>
     </ul>
 </nav>
 
 <div id="myModal" class="modal">
-    <!-- Modal content -->
     <div class="modal-content">
-        <span class="close">x</span>
-        <p>Some text in the Modal..</p>
+        <input type="button" id="close" value="x"> </input>
+        <p>You can find me on Github!</p>
     </div>
 </div>
 
@@ -37,28 +36,38 @@
 <div id="section2">
     <h1>My favorite classes</h1>
     <div class = "multi-colum">
-        <p class = "cols">CS498RK<br><br>Interesting Web Porgramming!!!</br></p>
-        <p class = "cols">CS461<br><br><br>Security! Challenge yourself</br></p>
-        <p class = "cols">CS498VR<br><br><br>Cool virtual reality! </br></p>
+        <p class = "cols">CS498RK<br><br><br><br>Interesting Web Porgramming!!!</br>
+        <br>Learned:<br>HTML5<br>CSS3<br>JavaScript
+        </p>
+        <p class = "cols">CS461<br>  <br><br><br>Security! Challenge yourself</br>
+            <br>Learned:<br>Hash Collision<br>Corss Site Request Forgery<br>Digital Forensic
+        </p>
+        <p class = "cols">CS498VR<br><br><br><br>Cool virtual reality! </br>
+            <br>Learned:<br>Unity<br>Play with Oculus!<br>Build your own game!
+        </p>
     </div>
 </div>
 
 <div id = "section3" class = "service">
+    <h1>My favorite pictures</h1>
     <!--<div class = "arrow" id="larrow" ><img src ="./media/leftarrow.png"></div>-->
-    <i class="fa fa-arrow-left" id="larrow"></i>
-    <div class = "arrow"  id="carousel">
+    <i class="fa fa-arrow-left" id="left-arrow"></i>
+    <div id="carousel">
         <ul id="list">
-            <li id='first'><img  src ="./media/slide1.jpeg"></li>
-            <li><img src ="./media/slide2.jpeg"></li>
-            <li id='last'><img src ="./media/slide3.jpeg"></li>
+            <li ><img class = "slide" src ="./media/uiuc2.jpeg"></li>
+            <li><img class = "slide" src ="./media/uiuc3.JPG"></li>
+            <li id='last'><img class = "slide" src ="./media/uiuc4.jpg"></li>
         </ul>
     </div>
     <!--<div class = "arrow" id="rarrow" ><img src ="./media/rightarrow.png"></div>-->
-    <i class="fa fa-arrow-right" id="rarrow"></i>
+    <i class="fa fa-arrow-right" id="right-arrow"></i>
 </div>
 
 <div id="section4">
-    <img class = "icon" src="./media/icons.jpg">
+    <!--<img class = "icon" src="./media/icons.jpg">-->
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-github"></i
 </div>
 
 
@@ -66,4 +75,10 @@
 <script src="js/script.js"></script>
 <script src="http://localhost:35729/livereload.js"></script>
 </body>
+
+<footer>
+    <p>Posted by: Ranran Li</p>
+    <p>Contact information: <a href="rli17@illinois.edu">
+        rli17@illinois.edu</a>.</p>
+</footer>
 </html>
