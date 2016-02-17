@@ -4,14 +4,14 @@ document.getElementById("link1").style.backgroundColor="#111";
 $(document).ready(
     function(){
         //left arrow movement
-
+        var width = window.innerWidth;
+        var offset = Math.floor(width*0.6);
+        var mid =  "-"+offset+"px";
+        var right = "-"+offset*2+"px";
         $('#left-arrow').click(
             function(){
 
-                var width = window.innerWidth;
-                var offset = Math.floor(width*0.6);
-                var mid =  "-"+offset+"px";
-                var right = "-"+offset*2+"px";
+
                 if($('#list').css("margin-left") == "0px"){
                     $("#list").css( { "margin-left" : mid} );
                     var here = $('#list').css("margin-left");
